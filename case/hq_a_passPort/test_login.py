@@ -4,7 +4,7 @@
 # PyCharm
 
 
-# 3.导入requests和unittest模块
+# 导入requests和unittest模块
 import yaml
 import requests
 import unittest

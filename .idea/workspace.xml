@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ef51905-872c-465c-84ac-aeb8544468c7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/report/result2021-06-22-14_29_53.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/result2021-06-22-14_31_27.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/result2021-06-22-14_33_42.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/result2021-06-22-14_35_32.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/result2021-06-22-14_49_27.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/report/result2021-06-22-15_11_30.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case/hq_a_passPort/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/hq_a_passPort/test_login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/HTMLTestRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/HTMLTestRunner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/run_all_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/run_all_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/login_email_token.yml" beforeDir="false" afterPath="$PROJECT_DIR$/venv/login_email_token.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/login_mobile_token.yml" beforeDir="false" afterPath="$PROJECT_DIR$/venv/login_mobile_token.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +185,7 @@
       <workItem from="1623479998892" duration="744000" />
       <workItem from="1623480888205" duration="580000" />
       <workItem from="1623481630845" duration="8000" />
-      <workItem from="1624245219681" duration="10214000" />
+      <workItem from="1624245219681" duration="12531000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1624245350343</created>
@@ -200,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624342091118</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="first">
+      <created>1624342975398</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1624342975398</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,40 +242,40 @@
       <screen x="0" y="23" width="1440" height="830" />
     </state>
     <state x="184" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.830@0.23.1440.830" timestamp="1623430314103" />
-    <state x="448" y="14" key="CommitChangelistDialog2" timestamp="1624342090957">
+    <state x="448" y="14" key="CommitChangelistDialog2" timestamp="1624342975216">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="448" y="14" key="CommitChangelistDialog2/0.0.1440.900/-255.-1080.1920.1080@0.0.1440.900" timestamp="1624342090957" />
+    <state x="448" y="14" key="CommitChangelistDialog2/0.0.1440.900/-255.-1080.1920.1080@0.0.1440.900" timestamp="1624342975216" />
     <state x="448" y="14" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1624267809488" />
     <state x="448" y="36" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1624245350145" />
-    <state width="1398" height="294" key="GridCell.Tab.0.bottom" timestamp="1624342966840">
+    <state width="1398" height="198" key="GridCell.Tab.0.bottom" timestamp="1624346562750">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.0.bottom/0.0.1440.900/-255.-1080.1920.1080@0.0.1440.900" timestamp="1624342966840" />
+    <state width="1398" height="198" key="GridCell.Tab.0.bottom/0.0.1440.900/-255.-1080.1920.1080@0.0.1440.900" timestamp="1624346562750" />
     <state width="1398" height="294" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1624267772720" />
     <state width="1568" height="294" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1624246216358" />
     <state width="1398" height="294" key="GridCell.Tab.0.bottom/0.23.1440.829@0.23.1440.829" timestamp="1623480875085" />
     <state width="1398" height="295" key="GridCell.Tab.0.bottom/0.23.1440.830@0.23.1440.830" timestamp="1623478646352" />
-    <state width="1398" height="294" key="GridCell.Tab.0.center" timestamp="1624342966838">
+    <state width="1398" height="198" key="GridCell.Tab.0.center" timestamp="1624346562749">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.0.center/0.0.1440.900/-255.-1080.1920.1080@0.0.1440.900" timestamp="1624342966838" />
+    <state width="1398" height="198" key="GridCell.Tab.0.center/0.0.1440.900/-255.-1080.1920.1080@0.0.1440.900" timestamp="1624346562749" />
     <state width="1398" height="294" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1624267772719" />
     <state width="1568" height="294" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1624246216357" />
     <state width="1398" height="294" key="GridCell.Tab.0.center/0.23.1440.829@0.23.1440.829" timestamp="1623480875085" />
     <state width="1398" height="295" key="GridCell.Tab.0.center/0.23.1440.830@0.23.1440.830" timestamp="1623478646352" />
-    <state width="1398" height="294" key="GridCell.Tab.0.left" timestamp="1624342966837">
+    <state width="1398" height="198" key="GridCell.Tab.0.left" timestamp="1624346562748">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.0.left/0.0.1440.900/-255.-1080.1920.1080@0.0.1440.900" timestamp="1624342966837" />
+    <state width="1398" height="198" key="GridCell.Tab.0.left/0.0.1440.900/-255.-1080.1920.1080@0.0.1440.900" timestamp="1624346562748" />
     <state width="1398" height="294" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1624267772718" />
     <state width="1568" height="294" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1624246216356" />
     <state width="1398" height="294" key="GridCell.Tab.0.left/0.23.1440.829@0.23.1440.829" timestamp="1623480875085" />
     <state width="1398" height="295" key="GridCell.Tab.0.left/0.23.1440.830@0.23.1440.830" timestamp="1623478646351" />
-    <state width="1398" height="294" key="GridCell.Tab.0.right" timestamp="1624342966839">
+    <state width="1398" height="198" key="GridCell.Tab.0.right" timestamp="1624346562749">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="294" key="GridCell.Tab.0.right/0.0.1440.900/-255.-1080.1920.1080@0.0.1440.900" timestamp="1624342966839" />
+    <state width="1398" height="198" key="GridCell.Tab.0.right/0.0.1440.900/-255.-1080.1920.1080@0.0.1440.900" timestamp="1624346562749" />
     <state width="1398" height="294" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1624267772719" />
     <state width="1568" height="294" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1624246216357" />
     <state width="1398" height="294" key="GridCell.Tab.0.right/0.23.1440.829@0.23.1440.829" timestamp="1623480875085" />
@@ -317,7 +332,7 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/unittest_python_hq$run_all_case.coverage" NAME="run_all_case Coverage Results" MODIFIED="1624341917762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
+    <SUITE FILE_PATH="coverage/unittest_python_hq$run_all_case.coverage" NAME="run_all_case Coverage Results" MODIFIED="1624345889846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv" />
     <SUITE FILE_PATH="coverage/unittest_python_hq$Unittests_in_test_has_register_py.coverage" NAME="Unittests in test_has_register.py Coverage Results" MODIFIED="1623477839258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/hq_a_passPort" />
     <SUITE FILE_PATH="coverage/unittest_python_hq$Unittests_in_test_login_py.coverage" NAME="Unittests in test_login.py Coverage Results" MODIFIED="1624329527620" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/hq_a_passPort" />
     <SUITE FILE_PATH="coverage/unittest_python_hq$test_has_register.coverage" NAME="test_has_register Coverage Results" MODIFIED="1624255571826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/case/hq_a_passPort" />
