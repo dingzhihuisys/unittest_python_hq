@@ -189,8 +189,8 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>测试用例</h1>
-<p class='attribute'><strong>Start Time:</strong> 2021-06-21 16:57:06</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:00.830949</p>
+<p class='attribute'><strong>Start Time:</strong> 2021-06-22 14:02:09</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:00.466768</p>
 <p class='attribute'><strong>Status:</strong> Error 3</p>
 
 <p class='description'>用例执行情况</p>
@@ -249,7 +249,7 @@ ft1.1: b''Traceback (most recent call last):
   File "/Users/dingzhihui/dzh_test/PycharmProjects/unittest_python_hq/case/hq_a_passPort/test_has_register.py", line 29, in test_register01
     print(result)
   File "/Users/dingzhihui/dzh_test/PycharmProjects/unittest_python_hq/common/HTMLTestRunner.py", line 168, in write
-    self.fp.write(s)
+    self.fp.write(s).encode()
 TypeError: a bytes-like object is required, not 'str'
 
 
@@ -288,7 +288,7 @@ ft2.1: b''Traceback (most recent call last):
   File "/Users/dingzhihui/dzh_test/PycharmProjects/unittest_python_hq/case/hq_a_passPort/test_login.py", line 35, in test_login1
     print("邮箱登录成功"+result.get('result').get("accessToken"))
   File "/Users/dingzhihui/dzh_test/PycharmProjects/unittest_python_hq/common/HTMLTestRunner.py", line 168, in write
-    self.fp.write(s)
+    self.fp.write(s).encode()
 TypeError: a bytes-like object is required, not 'str'
 
 
@@ -318,7 +318,7 @@ ft2.2: b''Traceback (most recent call last):
   File "/Users/dingzhihui/dzh_test/PycharmProjects/unittest_python_hq/case/hq_a_passPort/test_login.py", line 55, in test_login2
     print("手机号登录成功"+result.get('result').get("accessToken"))
   File "/Users/dingzhihui/dzh_test/PycharmProjects/unittest_python_hq/common/HTMLTestRunner.py", line 168, in write
-    self.fp.write(s)
+    self.fp.write(s).encode()
 TypeError: a bytes-like object is required, not 'str'
 
 

@@ -32,13 +32,13 @@ from email.mime.multipart import MIMEMultipart
 # 定义发送邮件
 def send_mail(file_new):
     # -----------1.发件相关内容------------
-    smtpserver = 'smtp.downtown8.com'
+    smtpserver = 'smtp.qq.com'
     port = 25  # 端口
-    username = 'zhihui.ding@downtown8.com'  # 发件箱用户名
-    password = 'DZH123456@'  # 发件箱密码
-    sender = 'zhihui.ding@downtown8.com'  # 发件人邮箱
+    username = '1002837527@qq.com'  # 发件箱用户名
+    password = 'lkibnmihcvqlbfhc'  # 发件箱密码
+    sender = '1002837527@qq.com'  # 发件人邮箱
     # receiver = '1002837527@qq.com'  # 收件人邮箱
-    receiver = ['1002837527@qq.com', '609093314@qq.com']
+    receiver = ['zhihui.ding@downtown8.com', '609093314@qq.com']
 
     # -----------2.编辑邮件内容--------------
     f = open(file_new, 'rb')
@@ -80,9 +80,7 @@ def send_mail(file_new):
     smt_l.quit()
     print("邮件已发出 ，注意查收")
 
-
 """==============================获取最新的测试报告============================="""
-
 
 # 查找测试目录 找到最新生成的测试报告文件
 def new_report(test_report):

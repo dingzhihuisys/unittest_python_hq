@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>测试用例</h1>
-<p class='attribute'><strong>Start Time:</strong> 2021-06-21 14:33:43</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:00.556625</p>
-<p class='attribute'><strong>Status:</strong> Error 3</p>
+<p class='attribute'><strong>Start Time:</strong> 2021-06-22 14:05:17</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:00.732119</p>
+<p class='attribute'><strong>Status:</strong> Pass 3</p>
 
 <p class='description'>用例执行情况</p>
 </div>
@@ -221,37 +221,31 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
-<tr class='errorClass'>
+<tr class='passClass'>
     <td>hq_a_passPort.test_has_register.test_downtown_register</td>
     <td>1</td>
-    <td>0</td>
-    <td>0</td>
     <td>1</td>
+    <td>0</td>
+    <td>0</td>
     <td><a href="javascript:showClassDetail('c1',1)">Detail</a></td>
 </tr>
 
-<tr id='ft1.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_register01</div></td>
+<tr id='pt1.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_register01</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
-        error</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1')" >
+        pass</a>
 
-    <div id='div_ft1.1' class="popup_window">
+    <div id='div_pt1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft1.1: b''Traceback (most recent call last):
-  File "/Users/dingzhihui/dzh_test/PycharmProjects/unittest_python_hq/case/hq_a_passPort/test_has_register.py", line 29, in test_register01
-    print(result)
-  File "/Users/dingzhihui/dzh_test/PycharmProjects/unittest_python_hq/common/HTMLTestRunner.py", line 168, in write
-    self.fp.write(s)
-TypeError: a bytes-like object is required, not 'str'
-
+pt1.1: b"{'result': {'hasRegister': True}}\n"
 
         </pre>
     </div>
@@ -260,37 +254,31 @@ TypeError: a bytes-like object is required, not 'str'
     </td>
 </tr>
 
-<tr class='errorClass'>
+<tr class='passClass'>
     <td>hq_a_passPort.test_login.test_downtown_login</td>
     <td>2</td>
-    <td>0</td>
-    <td>0</td>
     <td>2</td>
+    <td>0</td>
+    <td>0</td>
     <td><a href="javascript:showClassDetail('c2',2)">Detail</a></td>
 </tr>
 
-<tr id='ft2.1' class='none'>
-    <td class='errorCase'><div class='testcase'>test_login1: 测试登录：正确账号，正确密码（邮箱）</div></td>
+<tr id='pt2.1' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_login1: 测试登录：正确账号，正确密码（邮箱）</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.1')" >
-        error</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.1')" >
+        pass</a>
 
-    <div id='div_ft2.1' class="popup_window">
+    <div id='div_pt2.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft2.1: b''Traceback (most recent call last):
-  File "/Users/dingzhihui/dzh_test/PycharmProjects/unittest_python_hq/case/hq_a_passPort/test_login.py", line 35, in test_login1
-    print("邮箱登录成功"+result.get('result').get("accessToken"))
-  File "/Users/dingzhihui/dzh_test/PycharmProjects/unittest_python_hq/common/HTMLTestRunner.py", line 168, in write
-    self.fp.write(s)
-TypeError: a bytes-like object is required, not 'str'
-
+pt2.1: b'\xe9\x82\xae\xe7\xae\xb1\xe7\x99\xbb\xe5\xbd\x95\xe6\x88\x90\xe5\x8a\x9feyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoyOSwidG9rZW5faWQiOiI5MGZjYjRmZlMyZjE0UzQ5NGJTYjk5ZVM2Y2ZiOWY1MTkwNjkiLCJicmFuZF9pZHMiOls2MDAxMDIsNjAwMTAzLDYwMDI4OSw2MDAzMzMsMTExNjAwNzI5XSwiaWF0IjoxNjI0MzQxOTE4LCJleHAiOjE2MjQ5NDY3MTh9.ENx-6wge6JDCVnaF1sTk0G8WdhQ77FIkX631kkAxPKsCDP05Q-WEZQ19Janh0c9vOB1tbqBXDtQQocEmC1iAjYea2IZqarHaEfBhwW-ZPXDPisfX9oUvT5m7otDv05V7QPOB91TMqS1PI0q9pXjBoiD7KG5bjSQ1zm8J-6MogUDyPOUnzDDPLtS2ERL6dM3u7V2dgmzeTeyY1Q4eRjJFoxi3xq4CivfdZ7u3NjqMsZZJXWDbEJ4tBFXq3yFLTAplXTMtKvjXoEgezTXXhE99ZWjI1pikJ7l8lllgp1nahl-JMZKqfsIszKQFAsYjC8H3Udc7VKR57E--KJqECn2dbQ\n'
 
         </pre>
     </div>
@@ -299,28 +287,22 @@ TypeError: a bytes-like object is required, not 'str'
     </td>
 </tr>
 
-<tr id='ft2.2' class='none'>
-    <td class='errorCase'><div class='testcase'>test_login2: 测试登录：正确账号，正确密码 （手机号）</div></td>
+<tr id='pt2.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_login2: 测试登录：正确账号，正确密码 （手机号）</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft2.2')" >
-        error</a>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt2.2')" >
+        pass</a>
 
-    <div id='div_ft2.2' class="popup_window">
+    <div id='div_pt2.2' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_ft2.2').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt2.2').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-ft2.2: b''Traceback (most recent call last):
-  File "/Users/dingzhihui/dzh_test/PycharmProjects/unittest_python_hq/case/hq_a_passPort/test_login.py", line 55, in test_login2
-    print("手机号登录成功"+result.get('result').get("accessToken"))
-  File "/Users/dingzhihui/dzh_test/PycharmProjects/unittest_python_hq/common/HTMLTestRunner.py", line 168, in write
-    self.fp.write(s)
-TypeError: a bytes-like object is required, not 'str'
-
+pt2.2: b'\xe6\x89\x8b\xe6\x9c\xba\xe5\x8f\xb7\xe7\x99\xbb\xe5\xbd\x95\xe6\x88\x90\xe5\x8a\x9feyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjo2LCJ0b2tlbl9pZCI6IjZkMjM1MzZjUzY5ZDNTNDJmNVM4MWZjU2MyNGQ1OTdiNzkwNSIsImJyYW5kX2lkcyI6WzExMTYwMDM0MSwxMTE2MDA1NzksMTExNjAwNTgxLDExMTYwMDU4MiwxMTE2MDA1ODMsMTExNjAwNTg0LDExMTYwMDU4NSwxMTE2MDA1ODYsMTExNjAwNTkzXSwiaWF0IjoxNjI0MzQxOTE4LCJleHAiOjE2MjQ5NDY3MTh9.g-aZ9YKAZ4XTz5tysQu7HHHTJqXIMJgv-Djqw31xv4jrStf3wsAU4fFp0T82ccnX5Ju7zLyZVL82UfYMilqv94CysCrQTrvdQDU7c6fUho_0ob_Z8WFytO5z-S15i8VIBpnPDUNkM6C57K4efy6IrQSAVDJJaXtRuhzFW_gwSl6RETp3LIh3_YIoivyjSC2vie-6SK7dUIrMCfBJeTHxbvy8zyROWG_y4F9yIxFmLPpu1MX5hdFmm4DAN1SJBh2LgjMDGlcFuAW8kvzdEyTqm9Yi8zLJQiYBBCSlP_joArs39WOQjLrFaRvhcLX0soP4aFfDkAFE72Yn0xiMBmnDXw\n'
 
         </pre>
     </div>
@@ -332,9 +314,9 @@ TypeError: a bytes-like object is required, not 'str'
 <tr id='total_row'>
     <td>Total</td>
     <td>3</td>
-    <td>0</td>
-    <td>0</td>
     <td>3</td>
+    <td>0</td>
+    <td>0</td>
     <td>&nbsp;</td>
 </tr>
 </table>
