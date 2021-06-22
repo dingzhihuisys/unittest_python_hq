@@ -4,6 +4,7 @@
 # PyCharm
 import os
 import unittest
+
 start_dir = "/Users/dingzhihui/dzh_test/PycharmProjects/unittest_python_hq/case"
 # 获取所有测试用例
 def get_all_case():
@@ -28,7 +29,6 @@ import os
 from email.mime.multipart import MIMEMultipart
 
 
-
 # 定义发送邮件
 def send_mail(file_new):
     # -----------1.发件相关内容------------
@@ -49,7 +49,7 @@ def send_mail(file_new):
     msg = MIMEMultipart()
     msg['Subject'] = Header("unittest自动化测试报告", 'utf-8').encode()  # 主题
     msg['From'] = Header(u'测试机器触发 <%s>' % sender)  # 发件人
-    print(sender + "0000000000000-------1")
+    # print(sender + "0000000000000-------1")
     # msg['to'] = Header(u'收件人 <%s>' % receiver)  # 收件人
     msg['to'] = ';'.join(receiver)
     msg['date'] = time.strftime("%a,%d %b %Y %H:%M:%S %z")  # 日期
@@ -80,7 +80,9 @@ def send_mail(file_new):
     smt_l.quit()
     print("邮件已发出 ，注意查收")
 
-"""==============================获取最新的测试报告============================="""
+
+""" ==============================获取最新的测试报告============================="""
+
 
 # 查找测试目录 找到最新生成的测试报告文件
 def new_report(test_report):
@@ -90,7 +92,7 @@ def new_report(test_report):
     lists.sort(key=lambda fn: os.path.getmtime(test_report + "/" + fn))
     # 获取最新的文件到存到file_new
     file_new = os.path.join(test_report, lists[-1])
-    print(file_new)
+    # print(file_new)
     return file_new
 
 
@@ -115,7 +117,6 @@ if __name__ == '__main__':
         verbosity=2,
         description='用例执行情况'
     )
-
     # 运行所有
     runner.run(get_all_case())
     # 关闭文件 记住用open()打开文件后一定要记得关闭它，否则会占用系统的可打开文件句柄数。
@@ -125,8 +126,3 @@ if __name__ == '__main__':
     new_report = new_report(test_path)
     # 发送测试报告
     send_mail(new_report)
-
-
-
-
-
