@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ef51905-872c-465c-84ac-aeb8544468c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/report/result2021-06-22-14_29_53.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/result2021-06-22-14_31_27.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/result2021-06-22-14_33_42.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/result2021-06-22-14_35_32.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/result2021-06-22-14_49_27.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/report/result2021-06-22-15_11_30.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/case/hq_a_passPort/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/hq_a_passPort/test_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/HTMLTestRunner.py" beforeDir="false" afterPath="$PROJECT_DIR$/common/HTMLTestRunner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/login_email_token.yml" beforeDir="false" afterPath="$PROJECT_DIR$/venv/login_email_token.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/login_mobile_token.yml" beforeDir="false" afterPath="$PROJECT_DIR$/venv/login_mobile_token.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +175,7 @@
       <workItem from="1623479998892" duration="744000" />
       <workItem from="1623480888205" duration="580000" />
       <workItem from="1623481630845" duration="8000" />
-      <workItem from="1624245219681" duration="12531000" />
+      <workItem from="1624245219681" duration="12790000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1624245350343</created>
@@ -215,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624342975398</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="first">
+      <created>1624346782132</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1624346782133</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,10 +239,10 @@
       <screen x="0" y="23" width="1440" height="830" />
     </state>
     <state x="184" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.830@0.23.1440.830" timestamp="1623430314103" />
-    <state x="448" y="14" key="CommitChangelistDialog2" timestamp="1624342975216">
+    <state x="448" y="14" key="CommitChangelistDialog2" timestamp="1624346781939">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="448" y="14" key="CommitChangelistDialog2/0.0.1440.900/-255.-1080.1920.1080@0.0.1440.900" timestamp="1624342975216" />
+    <state x="448" y="14" key="CommitChangelistDialog2/0.0.1440.900/-255.-1080.1920.1080@0.0.1440.900" timestamp="1624346781939" />
     <state x="448" y="14" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1624267809488" />
     <state x="448" y="36" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1624245350145" />
     <state width="1398" height="198" key="GridCell.Tab.0.bottom" timestamp="1624346562750">
