@@ -4,8 +4,9 @@
 # PyCharm
 import os
 import unittest
-
-start_dir = "/Users/dingzhihui/dzh_test/PycharmProjects/unittest_python_hq/case"
+project_path = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+start_dir = project_path + "/case"
+# start_dir = "/Users/dingzhihui/dzh_test/PycharmProjects/unittest_python_hq/case"
 # 获取所有测试用例
 def get_all_case():
     discover = unittest.defaultTestLoader.discover(start_dir, pattern="test*.py")
@@ -107,7 +108,7 @@ if __name__ == '__main__':
     now = time.strftime("%Y-%m-%d-%H_%M_%S", time.localtime(time.time()))
     # print(time.localtime(time.time()))
     # 保存生成报告的路径
-    report_path = "/Users/dingzhihui/dzh_test/PycharmProjects/unittest_python_hq/report/result" + now + ".html"
+    report_path = project_path + "/report/result" + now + ".html"
     # report_path = "D:/pythonProject/python_test/report/result" + now + ".html"
     fp = open(report_path, 'wb')
 
@@ -122,7 +123,7 @@ if __name__ == '__main__':
     # 关闭文件 记住用open()打开文件后一定要记得关闭它，否则会占用系统的可打开文件句柄数。
     fp.close()
     # 测试报告文件夹
-    test_path = "/Users/dingzhihui/dzh_test/PycharmProjects/unittest_python_hq/report/"
+    test_path = project_path + "/report/"
     new_report = new_report(test_path)
     # 发送测试报告
     send_mail(new_report)
