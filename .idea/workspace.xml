@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ef51905-872c-465c-84ac-aeb8544468c7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/case/hq_a_passPort/test_inviteInfo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/hq_b_user/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/hq_c_mobile/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/case/hq_c_mobile/test_honmPage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/login_email_token.yml" beforeDir="false" afterPath="$PROJECT_DIR$/venv/login_email_token.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/login_mobile_token.yml" beforeDir="false" afterPath="$PROJECT_DIR$/venv/login_mobile_token.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/venv/run_all_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/run_all_case.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +175,7 @@
       <workItem from="1623479998892" duration="744000" />
       <workItem from="1623480888205" duration="580000" />
       <workItem from="1623481630845" duration="8000" />
-      <workItem from="1624245219681" duration="20823000" />
+      <workItem from="1624245219681" duration="20998000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1624245350343</created>
@@ -226,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1624347078401</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="push02">
+      <created>1624601349232</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1624601349233</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,17 +247,18 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="first" />
     <MESSAGE value="push01" />
-    <option name="LAST_COMMIT_MESSAGE" value="push01" />
+    <MESSAGE value="push02" />
+    <option name="LAST_COMMIT_MESSAGE" value="push02" />
   </component>
   <component name="WindowStateProjectService">
     <state x="184" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1623430314103">
       <screen x="0" y="23" width="1440" height="830" />
     </state>
     <state x="184" y="98" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.830@0.23.1440.830" timestamp="1623430314103" />
-    <state x="448" y="14" key="CommitChangelistDialog2" timestamp="1624347078242">
+    <state x="448" y="14" key="CommitChangelistDialog2" timestamp="1624601515925">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="448" y="14" key="CommitChangelistDialog2/0.0.1440.900/-255.-1080.1920.1080@0.0.1440.900" timestamp="1624347078242" />
+    <state x="448" y="14" key="CommitChangelistDialog2/0.0.1440.900/-255.-1080.1920.1080@0.0.1440.900" timestamp="1624601515925" />
     <state x="448" y="14" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1624267809488" />
     <state x="448" y="36" key="CommitChangelistDialog2/0.23.1440.828@0.23.1440.828" timestamp="1624245350145" />
     <state width="1398" height="272" key="GridCell.Tab.0.bottom" timestamp="1624601336072">
