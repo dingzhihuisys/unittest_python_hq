@@ -18,12 +18,12 @@ class test_mobile_homePage(unittest.TestCase):
         param = {
             "brandId": brand_id
                }
-        res = requests.post(url, headers=headers, data=json.dumps(param))
+        res = requests.post(url, headers=headers, json=param)
         return res.json()
 
     def test_homePage1(self):
         """brandId:600102"""
-        brand_id = "600102",  # 品牌id
+        brand_id = "600102"  # 品牌id
         request_result = test_mobile_homePage.homePage(self, brand_id)
         print(request_result)
         # if request_result.get('result').get('brandInfo')is not None:
