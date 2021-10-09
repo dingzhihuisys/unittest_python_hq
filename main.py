@@ -34,7 +34,7 @@ from email.mime.multipart import MIMEMultipart
 def send_mail(file_new):
     # -----------1.发件相关内容------------
     smtpserver = 'smtp.qq.com'
-    port = 25  # 端口
+    port = 465  # 端口
     username = '1002837527@qq.com'  # 发件箱用户名
     password = 'lkibnmihcvqlbfhc'  # 发件箱密码
     sender = '1002837527@qq.com'  # 发件人邮箱
