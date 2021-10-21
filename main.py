@@ -1,10 +1,11 @@
 # @dingzhihui   
-# 2021/6/7
+# 2021/10/1
 # 6:32 下午   
 # PyCharm
 import os
 import unittest
-project_path = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+# project_path = os.path.abspath(os.path.dirname(os.path.dirname(__file__)))
+project_path = os.path.abspath(os.path.dirname(__file__))
 start_dir = project_path + "/case"
 # start_dir = "/Users/dingzhihui/dzh_test/PycharmProjects/unittest_python_hq/case"
 # 获取所有测试用例
@@ -110,8 +111,10 @@ if __name__ == '__main__':
     # 保存生成报告的路径
     report_path = project_path + "/report/result" + now + ".html"
     # report_path = "D:/pythonProject/python_test/report/result" + now + ".html"
+    # if not os.path.exists(test_path):
+    #     os.mknod(test_path)
+    #     print("----看这里", test_path)
     fp = open(report_path, 'wb')
-
     runner = HTMLTestRunner.HTMLTestRunner(
         stream=fp,
         title='测试用例',
@@ -122,8 +125,13 @@ if __name__ == '__main__':
     runner.run(get_all_case())
     # 关闭文件 记住用open()打开文件后一定要记得关闭它，否则会占用系统的可打开文件句柄数。
     fp.close()
-    # 测试报告文件夹
     test_path = project_path + "/report/"
+    # if os.path.isdir(test_path):  ##不用加引号，如果是多级目录，只判断最后一级目录是否存在
+    #     print('dir exists')
+    #     pass
+    # else:
+    #     print('dir not exists')
+    #     os.mkdir(test_path)  ##只能创建单级目录，用这个命令创建级联的会报OSError错误         print 'mkdir ok
     new_report = new_report(test_path)
     # 发送测试报告
     send_mail(new_report)

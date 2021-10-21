@@ -7,7 +7,7 @@ import unittest
 import random
 
 import requests
-from case.hq_a_passPort import get_mobile_login_token
+from case.hq_a_passPort import get_email_login_token
 # 修改单个员工的岗位信息
 from case.hq_a_passPort.hq_user_employee import test_list_employee, test_exist_same_no
 
@@ -50,7 +50,7 @@ class test_downtown_update_role(unittest.TestCase):
 
     def test_update_role01(self):
         """修改员工的岗位信息"""
-        token = get_mobile_login_token.get_login_token()
+        token = get_email_login_token.get_login_search_token()
         brandId = 600333
         employee_id_op = test_list_employee.test_downtown_list_employee().test_self_detail01()
         employee_id = employee_id_op[0].get("employeeId")

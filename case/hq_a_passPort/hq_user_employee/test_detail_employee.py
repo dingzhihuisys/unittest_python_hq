@@ -4,7 +4,7 @@
 # PyCharm
 import unittest
 import requests
-from case.hq_a_passPort import get_mobile_login_token
+from case.hq_a_passPort import get_email_login_token
 # 获取单个员工的信息与详情
 from case.hq_a_passPort.hq_user_employee import test_list_employee
 class test_downtown_detail_employee(unittest.TestCase):
@@ -23,7 +23,7 @@ class test_downtown_detail_employee(unittest.TestCase):
 
     def test_detail_employee01(self):
         """获取单个员工的信息"""
-        token = get_mobile_login_token.get_login_token()
+        token = get_email_login_token.get_login_search_token()
         brandId = 600333
         employee_id_op = test_list_employee.test_downtown_list_employee().test_self_detail01()
         # print("看这里的内容", employee_id_op[0].get("employeeId"))

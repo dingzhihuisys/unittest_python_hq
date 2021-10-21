@@ -1,13 +1,14 @@
 # @dingzhihui   
-# 2021/10/6   
-# 4:36 下午
+# 2021/10/9
+# 8:41 下午   
+# PyCharm
 import unittest
 import requests
-# 获取个人信息
 from case.hq_a_passPort import get_email_login_token
 
-class test_downtown_self_detail(unittest.TestCase):
-    def self_detail(self, token):
+# 创建活动接口
+class test_downtown_activity(unittest.TestCase):
+    def self_activity(self, token):
         url = "https://posuser.downtown8.net/employee/selfDetail"
         headers = {
             "content-type": "application/json; charset=utf-8",
@@ -16,9 +17,9 @@ class test_downtown_self_detail(unittest.TestCase):
         res = requests.get(url, headers=headers)
         return res.json()
 
-    def test_self_detail01(self):
-        """获取个人信息详情"""
+    def test_self_activity01(self):
+        """获取活动列表"""
         token = get_email_login_token.get_login_search_token()
-        result = test_downtown_self_detail.self_detail(self, token)
+        result = test_downtown_activity.self_activity(self, token)
         print(result)
         # if result.get('result').get("accessToken") is not None:

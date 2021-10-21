@@ -5,7 +5,7 @@
 import unittest
 import requests
 # 获取员工列表
-from case.hq_a_passPort import get_mobile_login_token
+from case.hq_a_passPort import get_email_login_token
 
 # 获取岗位信息
 class test_downtown_role_list(unittest.TestCase):
@@ -18,19 +18,19 @@ class test_downtown_role_list(unittest.TestCase):
         param = {
             "brandId": brandId,
             "promissionKey": promission_key,
-            "promissionAppId": promission_app_id,
+            "promissionAppId": promission_app_id
         }
         res = requests.get(url, headers=headers, params=param)
         return res.json()
 
     def test_self_detail01(self):
         """获取岗位信息-----门店经理"""
-        token = get_mobile_login_token.get_login_token()
+        token = get_email_login_token.get_login_search_token()
         brandId = 600333,
         promission_key = 'add',
         promission_app_id = 33
         result = test_downtown_role_list.role_list(self, token, brandId, promission_key, promission_app_id)
-        print(result)
+        print("test_self_detail01看这里", result)
         print(result.get('result')[0].get('promissionRoleId'))
         if result.get('result')[0].get('promissionRoleId') == 103:
             print("获取到当前的职位是：", result.get('result')[0].get('name'), result.get('result')[0].get('roleKey'))
@@ -41,7 +41,7 @@ class test_downtown_role_list(unittest.TestCase):
 
     def test_self_detail02(self):
         """获取岗位信息-----财务"""
-        token = get_mobile_login_token.get_login_token()
+        token = get_email_login_token.get_login_search_token()
         brandId = 600333,
         promission_key = 'add',
         promission_app_id = 33
@@ -56,7 +56,7 @@ class test_downtown_role_list(unittest.TestCase):
 
     def test_self_detail03(self):
         """获取岗位信息-----管理员"""
-        token = get_mobile_login_token.get_login_token()
+        token = get_email_login_token.get_login_search_token()
         brandId = 600333,
         promission_key = 'add',
         promission_app_id = 33
@@ -71,7 +71,7 @@ class test_downtown_role_list(unittest.TestCase):
 
     def test_self_detail04(self):
         """获取岗位信息-----店员"""
-        token = get_mobile_login_token.get_login_token()
+        token = get_email_login_token.get_login_search_token()
         brandId = 600333,
         promission_key = 'add',
         promission_app_id = 33

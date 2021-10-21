@@ -5,7 +5,7 @@
 import unittest
 import requests
 # 获取员工列表
-from case.hq_a_passPort import get_mobile_login_token
+from case.hq_a_passPort import get_email_login_token
 
 
 class test_downtown_list_employee(unittest.TestCase):
@@ -28,7 +28,7 @@ class test_downtown_list_employee(unittest.TestCase):
 
     def test_self_detail01(self):
         """获取员工列表"""
-        token = get_mobile_login_token.get_login_token()
+        token = get_email_login_token.get_login_search_token()
         brandId = 600333,
         page_no = 1,
         page_size = 10000,

@@ -9,6 +9,8 @@ import yaml
 import requests
 import unittest
 # 商家后台登录
+from main import project_path
+
 
 class test_downtown_login(unittest.TestCase):
     def login(self, passport, pwd, passport_Type):
@@ -33,11 +35,12 @@ class test_downtown_login(unittest.TestCase):
         result = test_downtown_login.login(self, passport, pwd, passport_Type)
         # print((result.get('result').get("accessToken")))
         if result.get('result').get("accessToken") is not None:
-            print("邮箱登录成功", result.get('result').get("accessToken"))
+            print("邮箱登录成功，返回token")
         # 把token值写入配置文件中
         # 保存文件路径
         # r'Users/dingzhihui/dzh_test/PycharmProjects/unittest_python/hq_test_login/a_login/login_email_token.yml'
-        yaml_path = r'login_email_token.yml'
+        # yaml_path = r'login_email_token.yml'
+        yaml_path = project_path + '/case/hq_a_passPort/hq_login_token/login_email_token.yml'
         # 提取token字段
         tokenValue = {
             'token': result.get('result').get("accessToken")
@@ -53,10 +56,10 @@ class test_downtown_login(unittest.TestCase):
         result = test_downtown_login.login(self, passport, pwd, passport_Type)
         # print((result.get('result').get("accessToken")))
         if result.get('result').get("accessToken") is not None:
-            print("手机号登录成功", result.get('result').get("accessToken"))
+            print("手机号登录成功，返回token")
         # 把token值写入配置文件中
         # 保存文件路径
-        yaml_path = r'login_mobile_token.yml'
+        yaml_path = project_path + '/case/hq_a_passPort/hq_login_token/login_mobile_token.yml'
         # 提取token字段
         tokenValue = {
             'token': result.get('result').get("accessToken")
@@ -70,9 +73,9 @@ class test_downtown_login(unittest.TestCase):
         pwd = "DZh123456",  # 正确密码，
         passport_Type = "email",
         result = test_downtown_login.login(self, passport, pwd, passport_Type)
-        print(result)
+        # print(result)
         if result.get('error').get("code") == '40002':
-            print("账号错误", result.get('error').get("message"))
+            print("账号不存在", "code：", result.get('error').get("code"))
         else:
             print("系统错误", result.get('error').get("message"))
 
@@ -82,9 +85,9 @@ class test_downtown_login(unittest.TestCase):
         pwd = "DZh123456",  # 正确密码，
         passport_Type = "email",
         result = test_downtown_login.login(self, passport, pwd, passport_Type)
-        print(result)
+        # print(result)
         if result.get('error').get("code") == -1:
-            print("账号为空", result.get('error').get("message"))
+            print("缺少参数passport", "code:", result.get('error').get("code"))
         else:
             print("系统错误", result.get('error').get("message"))
 
@@ -94,9 +97,9 @@ class test_downtown_login(unittest.TestCase):
         pwd = "DZh1",
         passport_Type = "email",
         result = test_downtown_login.login(self, passport, pwd, passport_Type)
-        print(result)
+        # print(result)
         if result.get('error').get("code") == '40001':
-            print("账号或密码错误", result.get('error').get("message"))
+            print("账号或密码错误", "code:", result.get('error').get("code"))
         else:
             print("系统错误", result.get('error').get("message"))
 
@@ -106,9 +109,9 @@ class test_downtown_login(unittest.TestCase):
         pwd = "DZh1",
         passport_Type = "email",
         result = test_downtown_login.login(self, passport, pwd, passport_Type)
-        print(result)
+        # print(result)
         if result.get('error').get("code") == '40002':
-            print("密码错误", result.get('error').get("message"))
+            print("账户不存在", "code:", result.get('error').get("code"))
         else:
             print("系统错误", result.get('error').get("message"))
 
@@ -118,9 +121,9 @@ class test_downtown_login(unittest.TestCase):
         pwd = "DZh123456",
         passport_Type = "email",
         result = test_downtown_login.login(self, passport, pwd, passport_Type)
-        print(result)
+        # print(result)
         if result.get('error').get("code") == '40002':
-            print("密码错误", result.get('error').get("message"))
+            print("账户不存在", "code:", result.get('error').get("code"))
         else:
             print("系统错误", result.get('error').get("message"))
 
@@ -130,9 +133,9 @@ class test_downtown_login(unittest.TestCase):
         pwd = "",
         passport_Type = "email",
         result = test_downtown_login.login(self, passport, pwd, passport_Type)
-        print(result)
+        # print(result)
         if result.get('error').get("code") == -1:
-            print("密码为空", result.get('error').get("message"))
+            print("缺少参数pwd", "code", result.get('error').get("code"))
         else:
             print("系统错误", result.get('error').get("message"))
 

@@ -6,7 +6,7 @@ import json
 import unittest
 import requests
 # 获取员工列表
-from case.hq_a_passPort import get_mobile_login_token
+from case.hq_a_passPort import get_email_login_token
 
 # 获取岗位信息
 # 获取门店信息
@@ -21,7 +21,6 @@ class test_downtown_create_employee(unittest.TestCase):
         headers = {
             "content-type": "application/json; charset=utf-8",
             "token": token
-
         }  # get方法其它加个ser-Agent就可以了
         param = {
             "brandId": brandId
@@ -41,7 +40,7 @@ class test_downtown_create_employee(unittest.TestCase):
 
     def test_create_employee01(self):
         """创建 门店经理"""
-        token = get_mobile_login_token.get_login_token()
+        token = get_email_login_token.get_login_search_token()
         brandId = 600333,
         employee_name = get_random_name.random_name(),
         # print(employee_name, "姓名000000")
@@ -65,7 +64,7 @@ class test_downtown_create_employee(unittest.TestCase):
 
     def test_create_employee02(self):
         """创建-- 店员"""
-        token = get_mobile_login_token.get_login_token()
+        token = get_email_login_token.get_login_search_token()
         brandId = 600333,
         employee_name = get_random_name.random_name(),
         # print(employee_name, "姓名000000")
@@ -89,7 +88,7 @@ class test_downtown_create_employee(unittest.TestCase):
 
     def test_create_employee03(self):
         """创建----- 财务"""
-        token = get_mobile_login_token.get_login_token()
+        token = get_email_login_token.get_login_search_token()
         brandId = 600333,
         employee_name = get_random_name.random_name(),
         # print(employee_name, "姓名000000")
@@ -113,7 +112,7 @@ class test_downtown_create_employee(unittest.TestCase):
 
     def test_create_employee04(self):
         """创建----- 管理员"""
-        token = get_mobile_login_token.get_login_token()
+        token = get_email_login_token.get_login_search_token()
         brandId = 600333,
         employee_name = get_random_name.random_name(),
         # print(employee_name, "姓名000000")

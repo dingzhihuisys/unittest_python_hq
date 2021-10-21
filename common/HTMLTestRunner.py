@@ -459,10 +459,10 @@ a.popup_link:hover {
     #
 
     REPORT_TMPL = """
-<p id='show_detail_line'>Show
-<a href='javascript:showCase(0)'>Summary</a>
-<a href='javascript:showCase(1)'>Failed</a>
-<a href='javascript:showCase(2)'>All</a>
+<p id='show_detail_line'>展示
+<a href='javascript:showCase(0)'>总槪</a>
+<a href='javascript:showCase(1)'>失败</a>
+<a href='javascript:showCase(2)'>所有</a>
 </p>
 <table id='result_table'>
 <colgroup>
@@ -695,17 +695,17 @@ class HTMLTestRunner(Template_mixin):
         startTime = str(self.startTime)[:19]
         duration = str(self.stopTime - self.startTime)
         status = []
-        if result.success_count: status.append('Pass %s' % result.success_count)
-        if result.failure_count: status.append('Failure %s' % result.failure_count)
-        if result.error_count:   status.append('Error %s' % result.error_count)
+        if result.success_count: status.append('通过 %s' % result.success_count)
+        if result.failure_count: status.append('失败 %s' % result.failure_count)
+        if result.error_count:   status.append('报错 %s' % result.error_count)
         if status:
             status = ' '.join(status)
         else:
             status = 'none'
         return [
-            ('Start Time', startTime),
-            ('Duration', duration),
-            ('Status', status),
+            ('用例执行的开始时间', startTime),
+            ('所有用例持续时间', duration),
+            ('状态', status),
         ]
 
     def generateReport(self, test, result):
@@ -803,7 +803,8 @@ class HTMLTestRunner(Template_mixin):
             # uo = unicode(o.encode('string_escape'))
             # uo = o.decode('latin-1')
             # uo = o.decode('utf-8')
-            uo = o
+            uo = o.decode('utf-8')
+            # uo = o
         else:
             uo = o
         if isinstance(e, str):
@@ -811,7 +812,8 @@ class HTMLTestRunner(Template_mixin):
             # ue = unicode(e.encode('string_escape'))
             # ue = e.decode('latin-1')
             # ue = e.decode('utf-8')
-            ue = e
+            ue = e.decode('utf-8')
+            # ue = e
         else:
             ue = e
 

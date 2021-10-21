@@ -6,7 +6,7 @@
 # 获取品牌下门店
 import unittest
 import requests
-from case.hq_a_passPort import get_mobile_login_token
+from case.hq_a_passPort import get_email_login_token
 
 
 class test_list_brand_store(unittest.TestCase):
@@ -24,7 +24,7 @@ class test_list_brand_store(unittest.TestCase):
 
     def test_list_brand_store01(self):
         """获取品牌下的门店信息"""
-        token = get_mobile_login_token.get_login_token()
+        token = get_email_login_token.get_login_search_token()
         brandId = 600333,
         result = test_list_brand_store.list_brand_store(self, token, brandId)
         print(result)
