@@ -9,7 +9,7 @@ from case.hq_a_passPort import get_email_login_token
 # 创建活动接口
 class test_downtown_activity(unittest.TestCase):
     def self_activity(self, token):
-        url = "https://posuser.downtown8.net/employee/selfDetail"
+        url = ""
         headers = {
             "content-type": "application/json; charset=utf-8",
             "token": token

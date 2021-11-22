@@ -12,7 +12,7 @@ class test_downtown_create_coupon(unittest.TestCase):
     def create_coupon(self, token, coupon_name, type_single, eat_types, is_all_store, store_s, discount_type,
                     discount_value, product_relation, category_no, product_no, scale_no, product_combo_relation, combo_products, when_effect,
                     effect_day, description_s, is_give, picture_s, is_all_time, is_include_modifier, brandId):
-        url = "https://posuser.downtown8.net/employee/selfDetail"
+        url = ""
         headers = {
             "content-type": "application/json; charset=utf-8",
             "token": token

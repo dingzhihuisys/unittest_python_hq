@@ -222,9 +222,9 @@ class Template_mixin(object):
     """
 
     STATUS = {
-        0: 'pass',
-        1: 'fail',
-        2: 'error',
+        0: '通过',
+        1: '失败',
+        2: '报错',
     }
 
     DEFAULT_TITLE = 'Unit Test Report'
@@ -803,7 +803,7 @@ class HTMLTestRunner(Template_mixin):
             # uo = unicode(o.encode('string_escape'))
             # uo = o.decode('latin-1')
             # uo = o.decode('utf-8')
-            uo = o.decode('utf-8')
+            uo = o.encode('utf-8').decode('utf-8')
             # uo = o
         else:
             uo = o
@@ -812,7 +812,7 @@ class HTMLTestRunner(Template_mixin):
             # ue = unicode(e.encode('string_escape'))
             # ue = e.decode('latin-1')
             # ue = e.decode('utf-8')
-            ue = e.decode('utf-8')
+            ue = e.encode('utf-8').decode('utf-8')
             # ue = e
         else:
             ue = e
